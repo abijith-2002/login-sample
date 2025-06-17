@@ -76,7 +76,6 @@
   display: flex;
   flex-direction: column;
 }
-
 .login-field label {
   margin-bottom: 0.35rem;
   color: var(--secondary, #758ab5);
@@ -86,6 +85,29 @@
   text-shadow: 0 0.5px 0 #e6ecff34;
 }
 
+/* Icon & input alignment styles */
+.input-icon-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.input-with-icon {
+  padding-left: 2.2em !important; /* Allows for icon space */
+}
+.input-icon {
+  position: absolute;
+  left: 0.8em;
+  color: #9db2ce;
+  font-size: 1.22em;
+  pointer-events: none;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Keep input look/touch target large but icons proportionate */
 .login-field input {
   font-size: 1.07rem;
   padding: 0.75rem 0.95rem;
@@ -117,6 +139,17 @@
   letter-spacing: 0.04em;
   box-shadow: 0 2px 14px #0c469730;
   transition: filter 0.18s, background 0.23s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65em;
+}
+.login-btn .login-btn-icon {
+  margin-right: 0.18em;
+  font-size: 1.18em;
+  display: flex;
+  align-items: center;
+  line-height: 1;
 }
 .login-btn:hover {
   filter: brightness(1.07);
@@ -146,5 +179,12 @@
   }
   .login-container {
     background: #e2eaf4;
+  }
+  .input-icon {
+    left: 0.52em;
+    font-size: 1em;
+  }
+  .input-with-icon {
+    padding-left: 2em !important;
   }
 }
