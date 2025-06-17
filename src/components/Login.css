@@ -86,39 +86,87 @@
 }
 
 /* Icon & input alignment styles */
+/* Input/Icon alignment improvements */
 .input-icon-wrapper {
   display: flex;
   align-items: center;
   position: relative;
 }
+
 .input-with-icon {
-  padding-left: 2.25em !important; /* Slightly more to fit icon visually */
+  padding-left: 2.25em !important; /* Make space for icons, consistent */
+  font-size: 1.07rem;
 }
+
 .input-icon {
   position: absolute;
-  left: 0.78em;
+  left: 0.82em;
   color: #9db2ce;
-  font-size: 1.23em;
+  font-size: 1.22em;
   pointer-events: none;
   top: 50%;
   transform: translateY(-50%);
-  height: 1em;
-  width: 1.15em;
+  height: 1.22em;
+  width: 1.22em;
+  min-width: 1.22em;
+  min-height: 1.22em;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color 0.18s;
 }
 
+/* Add active/focus color for icon when input focused */
+.input-icon.input-icon-active {
+  color: #375bc4;
+}
+
+/* Login Button Icon styles */
 .login-btn .login-btn-icon {
-  margin-right: 0.18em;
+  margin-right: 0.36em;
   font-size: 1.18em;
   display: flex;
   align-items: center;
   justify-content: center;
   line-height: 1;
-  min-width: 1.1em;
-  min-height: 1.1em;
+  min-width: 1.18em;
+  min-height: 1.18em;
+  transition: color 0.15s;
 }
+
+/* Login button: height, icon spacing, and alignment tweaks */
+.login-btn {
+  margin-top: 1rem;
+  padding: 0.98rem 1.2rem;
+  background: linear-gradient(90deg, #375bc4 0%, #54d4ec 90%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.13rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  box-shadow: 0 2px 14px #0c469730;
+  transition: filter 0.18s, background 0.23s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.login-btn .login-btn-icon {
+  margin-right: 0.36em;
+  font-size: 1.18em;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+/* Button Icon on hover, slightly brighter */
+.login-btn:hover .login-btn-icon {
+  color: #ffe5b2;
+}
+
 
 /* Keep input look/touch target large but icons proportionate */
 .login-field input {
