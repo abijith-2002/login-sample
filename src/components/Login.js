@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../auth/AuthContext";
+import { FaUser, FaLock, FaSignInAlt } from "react-icons/fa";
 import "./Login.css";
 
 // PUBLIC_INTERFACE
@@ -76,29 +77,62 @@ export default function Login() {
           {error && <div className="login-error">{error}</div>}
           <div className="login-field">
             <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              autoComplete="username"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="your@email.com"
-            />
+            <div style={{ display: 'flex', alignItems: 'center', position: 'relative' }}>
+              <span
+                style={{
+                  position: 'absolute',
+                  left: 13,
+                  color: '#9db2ce',
+                  fontSize: '1.07rem',
+                  pointerEvents: 'none',
+                  top: '50%',
+                  transform: 'translateY(-50%)'
+                }}
+                aria-hidden="true">
+                <FaUser />
+              </span>
+              <input
+                type="email"
+                id="email"
+                autoComplete="username"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="your@email.com"
+                style={{ paddingLeft: 36 }}
+              />
+            </div>
           </div>
           <div className="login-field">
             <label htmlFor="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              autoComplete="current-password"
-              required
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              placeholder="Enter password"
-            />
+            <div style={{ display: 'flex', alignItems: 'center', position: 'relative' }}>
+              <span
+                style={{
+                  position: 'absolute',
+                  left: 13,
+                  color: '#9db2ce',
+                  fontSize: '1.07rem',
+                  pointerEvents: 'none',
+                  top: '50%',
+                  transform: 'translateY(-50%)'
+                }}
+                aria-hidden="true">
+                <FaLock />
+              </span>
+              <input
+                type="password"
+                id="password"
+                autoComplete="current-password"
+                required
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="Enter password"
+                style={{ paddingLeft: 36 }}
+              />
+            </div>
           </div>
-          <button className="login-btn" type="submit">
+          <button className="login-btn" type="submit" style={{display: "flex", alignItems: "center", justifyContent: "center", gap: "0.65em"}}>
+            <FaSignInAlt style={{ marginRight: "0.23em", fontSize: "1.18em" }} />
             Sign In
           </button>
         </form>
