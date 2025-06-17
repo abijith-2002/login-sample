@@ -92,19 +92,32 @@
   position: relative;
 }
 .input-with-icon {
-  padding-left: 2.2em !important; /* Allows for icon space */
+  padding-left: 2.25em !important; /* Slightly more to fit icon visually */
 }
 .input-icon {
   position: absolute;
-  left: 0.8em;
+  left: 0.78em;
   color: #9db2ce;
-  font-size: 1.22em;
+  font-size: 1.23em;
   pointer-events: none;
   top: 50%;
   transform: translateY(-50%);
+  height: 1em;
+  width: 1.15em;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.login-btn .login-btn-icon {
+  margin-right: 0.18em;
+  font-size: 1.18em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  min-width: 1.1em;
+  min-height: 1.1em;
 }
 
 /* Keep input look/touch target large but icons proportionate */
@@ -181,10 +194,15 @@
     background: #e2eaf4;
   }
   .input-icon {
-    left: 0.52em;
-    font-size: 1em;
+    left: 0.49em;
+    font-size: 1.01em;
+    min-width: 1em;
   }
   .input-with-icon {
     padding-left: 2em !important;
+  }
+  .login-btn .login-btn-icon {
+    font-size: 1em;
+    min-width: 1em;
   }
 }
