@@ -66,37 +66,48 @@ export default function Login() {
 
   return (
     <div className="login-container">
-      <form className="login-card" onSubmit={handleSubmit}>
-        <h2>Login</h2>
-        {error && <div className="login-error">{error}</div>}
-        <div className="login-field">
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            autoComplete="username"
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="your@email.com"
-          />
-        </div>
-        <div className="login-field">
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            autoComplete="current-password"
-            required
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="Enter password"
-          />
-        </div>
-        <button className="login-btn" type="submit">
-          Sign In
-        </button>
-      </form>
+      <div className="login-page-wrapper">
+        {/* Page Title */}
+        <header className="login-title-header">
+          <h1 className="portal-title">Employee Portal</h1>
+        </header>
+        <form className="login-card" onSubmit={handleSubmit}>
+          <h2>Login</h2>
+          {error && <div className="login-error">{error}</div>}
+          <div className="login-field">
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              autoComplete="username"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="your@email.com"
+            />
+          </div>
+          <div className="login-field">
+            <label htmlFor="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              autoComplete="current-password"
+              required
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Enter password"
+            />
+          </div>
+          <button className="login-btn" type="submit">
+            Sign In
+          </button>
+        </form>
+        {/* Footer */}
+        <footer className="login-footer">
+          <span>© {new Date().getFullYear()} Employee Portal. All rights reserved.</span>
+        </footer>
+      </div>
     </div>
   );
 }
+

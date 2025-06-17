@@ -7,6 +7,44 @@
     linear-gradient(120deg, #dde7f8 0%, #c2d6f6 100%);
 }
 
+/* New: Page Wrapper to ensure layout for header/footer */
+.login-page-wrapper {
+  width: 100vw;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 90vh;
+  justify-content: center;
+  position: relative;
+}
+
+/* New: Title styles */
+.login-title-header {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.portal-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  letter-spacing: 0.035em;
+  margin: 1.5rem 0 1rem 0;
+  color: #183063;
+  text-shadow: 0 3px 16px #e6f2ff66, 0 0px 0px #fff;
+}
+
+/* New: Footer styles */
+.login-footer {
+  text-align: center;
+  margin-top: 2.2rem;
+  padding: 1rem 0 0.7rem 0;
+  font-size: 1.028rem;
+  color: #7892b9;
+  opacity: 0.93;
+  border-top: 1.5px solid #e5ecf7;
+}
+
 .login-card {
   background: #fff;
   border-radius: 20px;
