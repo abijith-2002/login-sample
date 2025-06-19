@@ -6,3 +6,10 @@ To manually repeat:
 3. Push to the remote repository
 
 This log is for internal documentation only.
+
+Branch for login page UI modification: Please use a distinct branch name such as 'feature/login-ui-redesign'.
+Recommended git commands:
+    git checkout -b feature/login-ui-redesign
+    git push -u origin feature/login-ui-redesign
+
+This branch isolates changes for review and testing before merge into the main branch.
