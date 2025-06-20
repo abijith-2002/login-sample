@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../auth/AuthContext";
+import Header from "./Header";
+import Footer from "./Footer";
 import "./Login.css";
 
 // PUBLIC_INTERFACE
@@ -66,6 +68,7 @@ export default function Login() {
 
   return (
     <div className="login-container">
+      <Header />
       <form className="login-card" onSubmit={handleSubmit}>
         <h2>Login</h2>
         {error && <div className="login-error">{error}</div>}
@@ -97,6 +100,7 @@ export default function Login() {
           Sign In
         </button>
       </form>
+      <Footer />
     </div>
   );
 }

@@ -1,16 +1,19 @@
 .login-container {
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background:
-    linear-gradient(120deg, #dde7f8 0%, #c2d6f6 100%);
+    linear-gradient(120deg, #23243a 0%, #212133 100%);
+  position: relative;
 }
 
 .login-card {
-  background: #fff;
+  background: #22253b;
   border-radius: 20px;
-  box-shadow: 0 6px 28px rgba(45, 92, 167, 0.1), 0 1.5px 6px rgba(44,42,74,0.06);
+  box-shadow: 0 6px 28px rgba(20,25,30,0.36), 0 1.5px 6px rgba(44,42,74,0.16);
   padding: 2.5rem 2rem 2rem 2rem;
   min-width: 350px;
   max-width: 90vw;
@@ -19,18 +22,18 @@
   flex-direction: column;
   align-items: stretch;
   position: relative;
-  border: 1.5px solid #e5ecf7;
+  border: 1.5px solid #393d5f;
 }
 
 .login-card h2 {
-  color: var(--primary, #27408b);
+  color: #f4f8ff;
   font-size: 2rem;
   font-weight: 800;
   margin-top: 0;
   letter-spacing: 0.05em;
   margin-bottom: 1.7rem;
   text-align: center;
-  text-shadow: 0 5px 18px #e6f1ff44;
+  text-shadow: 0 5px 18px #29314588;
 }
 
 .login-field {
@@ -41,35 +44,35 @@
 
 .login-field label {
   margin-bottom: 0.35rem;
-  color: var(--secondary, #758ab5);
+  color: #9fa5ca;
   font-size: 1.04rem;
   font-weight: 600;
   letter-spacing: 0.03em;
-  text-shadow: 0 0.5px 0 #e6ecff34;
+  text-shadow: 0 0.5px 0 #19214634;
 }
 
 .login-field input {
   font-size: 1.07rem;
   padding: 0.75rem 0.95rem;
-  border: 1.5px solid #c2d8f3;
+  border: 1.5px solid #3d4059;
   border-radius: 8px;
-  background: #f9fbfe;
-  color: #324272;
+  background: #23243a;
+  color: #eaf0ff;
   outline: none;
   font-weight: 500;
-  transition: border 0.2s, box-shadow 0.2s;
-  box-shadow: 0 1.5px 10px #e7f1ff08;
+  transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 1.5px 10px #16172a2a;
 }
 .login-field input:focus {
-  border: 1.5px solid #4c6ef5;
-  background: #f4f8fd;
-  box-shadow: 0 0 0 1.5px #bdd9fb44;
+  border: 1.5px solid #74daeb;
+  background: #24284b;
+  box-shadow: 0 0 0 1.5px #1a6d8844;
 }
 
 .login-btn {
   margin-top: 1rem;
   padding: 0.95rem;
-  background: linear-gradient(90deg, #375bc4 0%, #54d4ec 90%);
+  background: linear-gradient(90deg, #43a8f8 0%, #2c3659 100%);
   color: #fff;
   font-weight: 700;
   font-size: 1.13rem;
@@ -81,22 +84,64 @@
   transition: filter 0.18s, background 0.23s;
 }
 .login-btn:hover {
-  filter: brightness(1.07);
-  background: linear-gradient(90deg, #27408b 0%, #30b7e6 100%);
+  filter: brightness(1.11);
+  background: linear-gradient(90deg, #27408b 0%, #41adbb 100%);
 }
 
 .login-error {
-  color: #ca1b27;
-  background: #ffedef;
+  color: #f3747a;
+  background: #3e2537;
   font-size: 1.03rem;
   margin-bottom: 1.2rem;
   border-radius: 8px;
   padding: 0.7rem 0.95rem;
   text-align: center;
-  border: 1px solid #f5c5c9;
+  border: 1px solid #5d3443;
   font-weight: 600;
   letter-spacing: 0.02em;
   box-shadow: 0 1.5px 7px #d62e3e18;
+}
+
+.login-header {
+  width: 100vw;
+  max-width: 100vw;
+  min-height: 64px;
+  color: #fff;
+  font-size: 2.12rem;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.025em;
+  background: #242549;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.8rem;
+  padding-bottom: 0.2rem;
+  margin-bottom: 1.1rem;
+  text-shadow: 0 7px 32px #06140f44;
+  z-index: 2;
+  box-shadow: 0 3px 14px #191b3610;
+  border-bottom: 1px solid #233246b6;
+}
+
+.login-footer {
+  width: 100vw;
+  max-width: 100vw;
+  min-height: 50px;
+  background: #16163a;
+  color: #a7a9b9;
+  font-size: 1.01rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.12rem 0 1.32rem 0;
+  margin-top: 2.3rem;
+  text-align: center;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  border-top: 1px solid #22233d;
+  letter-spacing: 0.01em;
+  z-index: 2;
+  box-shadow: 0 -3px 15px #01083410;
 }
 
 /* Responsive tweaks */
@@ -106,7 +151,7 @@
     width: 96vw;
     padding: 1.4rem 0.7rem 1.1rem 0.7rem;
   }
-  .login-container {
-    background: #e2eaf4;
+  .login-header, .login-footer {
+    min-width: 98vw;
   }
 }
