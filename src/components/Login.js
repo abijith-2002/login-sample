@@ -3,7 +3,9 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../auth/AuthContext";
 import Header from "./Header";
 import Footer from "./Footer";
+import ThemeToggleButton from "./ThemeToggleButton";
 import "./Login.css";
+import "./ThemeToggleButton.css";
 
 // PUBLIC_INTERFACE
 export default function Login() {
@@ -68,6 +70,7 @@ export default function Login() {
 
   return (
     <div className="login-container">
+      <ThemeToggleButton />
       <Header />
       <form className="login-card" onSubmit={handleSubmit}>
         <h2>Login</h2>

@@ -1,0 +1,28 @@
+.theme-toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 30px;
+  z-index: 10;
+  background: var(--nord1, #e5e9f0);
+  color: var(--primary);
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  box-shadow: 0 2px 16px rgba(30, 38, 80, 0.11);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.18s;
+  outline: none;
+}
+.theme-toggle-btn:hover,
+.theme-toggle-btn:focus {
+  background: var(--nord3, #4c566a);
+  color: var(--nord13, #ebcb8b);
+  box-shadow: 0 3px 28px rgba(52, 66, 120, 0.18);
+}
+.theme-toggle-btn svg {
+  pointer-events: none;
+}
