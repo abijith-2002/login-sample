@@ -67,7 +67,7 @@ export default function Login() {
   }
 
   return (
-    <div className="login-container">
+    <div className="login-container" style={{ fontFamily: "'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif", background: "var(--bg)" }}>
       <Header />
       <form className="login-card" onSubmit={handleSubmit}>
         <h2>Login</h2>
@@ -82,6 +82,7 @@ export default function Login() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="your@email.com"
+            style={{ fontFamily: "'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif" }}
           />
         </div>
         <div className="login-field">
@@ -94,9 +95,10 @@ export default function Login() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Enter password"
+            style={{ fontFamily: "'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif" }}
           />
         </div>
-        <button className="login-btn" type="submit">
+        <button className="login-btn" type="submit" style={{ fontFamily: "'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif" }}>
           Sign In
         </button>
       </form>
