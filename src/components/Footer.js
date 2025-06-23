@@ -7,13 +7,7 @@ import React from "react";
  */
 export default function Footer() {
   return (
-    <footer className="login-footer" style={{
-      fontFamily: "'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif",
-      background: "var(--nord1)",
-      color: "var(--nord4)",
-      textAlign: "center",
-      letterSpacing: "0.01em"
-    }}>
+    <footer className="login-footer">
       © 2024 Employee Portal. All rights reserved.
     </footer>
   );
