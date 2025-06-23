@@ -7,7 +7,7 @@ import React from "react";
  */
 export default function Header() {
   return (
-    <header className="login-header">
+    <header className="login-header" style={{ fontFamily: "'Inter', system-ui, 'Segoe UI', 'Roboto', Arial, sans-serif" }}>
       Employee Portal
     </header>
   );

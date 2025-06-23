@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   background: var(--bg);
-  font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
+  font-family: 'Inter', system-ui, 'Segoe UI', 'Roboto', Arial, sans-serif;
   position: relative;
 }
 
@@ -37,7 +37,7 @@
   margin-bottom: 1.7rem;
   text-align: center;
   text-shadow: 0 5px 18px rgba(76, 86, 106, 0.15);
-  font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
+  font-family: 'Inter', system-ui, 'Segoe UI', 'Roboto', Arial, sans-serif;
 }
 
 .login-field {
@@ -53,7 +53,7 @@
   font-weight: 600;
   letter-spacing: 0.03em;
   text-shadow: 0 0.5px 0 rgba(68, 105, 145, 0.18);
-  font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
+  font-family: 'Inter', system-ui, 'Segoe UI', 'Roboto', Arial, sans-serif;
 }
 
 .login-field input {
@@ -67,7 +67,7 @@
   font-weight: 500;
   transition: border 0.2s, box-shadow 0.2s, background 0.2s;
   box-shadow: 0 1.5px 10px rgba(46, 52, 64, 0.15);
-  font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
+  font-family: 'Inter', system-ui, 'Segoe UI', 'Roboto', Arial, sans-serif;
 }
 .login-field input:focus {
   border: 1.5px solid var(--nord8);
@@ -88,7 +88,7 @@
   letter-spacing: 0.04em;
   box-shadow: 0 2px 14px rgba(94, 129, 172, 0.14);
   transition: filter 0.18s, background 0.23s;
-  font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
+  font-family: 'Inter', system-ui, 'Segoe UI', 'Roboto', Arial, sans-serif;
 }
 .login-btn:hover {
   filter: brightness(1.06);
@@ -115,7 +115,7 @@
   min-height: 64px;
   color: var(--nord6);
   font-size: 2.12rem;
-  font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
+  font-family: 'Inter', system-ui, 'Segoe UI', 'Roboto', Arial, sans-serif;
   font-weight: bold;
   letter-spacing: 0.025em;
   background: var(--nord2);
@@ -144,7 +144,7 @@
   padding: 1.12rem 0 1.32rem 0;
   margin-top: 2.3rem;
   text-align: center;
-  font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
+  font-family: 'Inter', system-ui, 'Segoe UI', 'Roboto', Arial, sans-serif;
   border-top: 1px solid var(--nord3);
   letter-spacing: 0.01em;
   z-index: 2;
