@@ -1,10 +1,11 @@
 import React from "react";
 
 // PUBLIC_INTERFACE
+/**
+ * Footer for the Employee Portal login page, styled with the Nord palette.
+ * Uses Inter font via global CSS.
+ */
 export default function Footer() {
-  /**
-   * Renders the footer for the login page.
-   */
   return (
     <footer className="login-footer">
       © 2024 Employee Portal. All rights reserved.

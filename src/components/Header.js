@@ -1,10 +1,11 @@
 import React from "react";
 
 // PUBLIC_INTERFACE
+/**
+ * Header for the Employee Portal login page.
+ * Ensures Nord color palette and Inter font are used via CSS.
+ */
 export default function Header() {
-  /**
-   * Renders the Employee Portal header for the login page.
-   */
   return (
     <header className="login-header">
       Employee Portal

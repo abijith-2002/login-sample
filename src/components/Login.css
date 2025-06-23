@@ -1,3 +1,6 @@
+/* Import Inter font for assurance (Redundancy for component-level CSS, actual import is in global.css) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
 .login-container {
   min-height: 100vh;
   min-height: 100dvh;
