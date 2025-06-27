@@ -1,0 +1,28 @@
+.theme-toggle-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.85rem;
+  margin-left: auto;
+  margin-right: 0.64em;
+  outline: none;
+  color: var(--foreground, #e2eafc);
+  display: flex;
+  align-items: center;
+  transition: filter 0.18s, background 0.18s;
+  border-radius: 50%;
+  padding: 0.22em 0.4em;
+  box-shadow: none;
+  position: relative;
+}
+
+.theme-toggle-btn:hover,
+.theme-toggle-btn:focus {
+  filter: brightness(1.2);
+  background: rgba(150,150,200,0.075);
+}
+
+.theme-toggle-icon {
+  display: inline-flex;
+  align-items: center;
+}

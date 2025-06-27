@@ -4,11 +4,15 @@
   --accent: #4eb2e0;
   --bg: #1b1e35;
   --error: #f3747a;
+  --foreground: #e2eafc;
+  --header-bg: #242549;
+  --footer-bg: #16163a;
+  --login-card-bg: #22253b;
 }
 
 body {
   background: var(--bg);
-  color: #e2eafc;
+  color: var(--foreground, #e2eafc);
   font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
   margin: 0;
   min-height: 100vh;
